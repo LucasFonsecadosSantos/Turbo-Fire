@@ -1,0 +1,4 @@
+PROJECT_NAME = Turbo-Fire
+OUTPUT_DIRECTORY = docs
+INPUT = include
+RECURSIVE = yes
