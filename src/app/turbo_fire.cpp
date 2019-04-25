@@ -5,6 +5,6 @@
 
 int main() {
 	AttackPattern *attack = new AttackPattern();
-	attack->setIP("255.255.255.255");
+	attack->setIP("012.530.255.255");
 	return 0;
 }
