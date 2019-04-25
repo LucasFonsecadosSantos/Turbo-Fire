@@ -15,4 +15,4 @@ build/main: $(OBJECT_FILES)
 	g++ -g -std=c++11 -c $^ -o $@
 
 clean_objects: $(OBJECT_FILES)
-rm $^
+	rm $^

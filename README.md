@@ -97,6 +97,20 @@ The poject tasks that should be developed.
 - [x] Update the README.
 - [ ] Code review.
 
+Source code implementation
+**View package**
+- [x] GUI class implementation.
+- [ ] GUI class documentation.
+**Protocol package**
+- [ ] DDOS attack pattern implementation.
+- [ ] DDOS attack pattern documentation.
+**Util package**
+- [ ] Attack factory implementation.
+- [ ] Attack factory documentation.
+**DAO package**
+- [ ] File handler implementation.
+- [ ] File handler documentation.
+
 #### How to Contribute
 -
 
