@@ -1,14 +1,70 @@
+/**
+ * +-------------------------------------------------+
+ * +-------------------------------------------------+
+ * + TURBO FIRE -------------------------------------+
+ * + ------------------------------------------------+
+ * +---------------------------------F1R3S3C T34M----+
+ * 
+ * \file gui.hpp
+ * \brief This file has a user interface communication description.
+ * \copyright COPYLEFT :)
+ * This project is under GPLv3 (General Public License) version 3.
+ */
 #ifndef GUI_VIEW_H
 #define GUI_VIEW_H 1
 
 #include <string>
 
+/**
+ * \class Gui
+ * \author Lucas Fonseca dos Santos (lucas@lcfcompany.com.br)
+ * \date 2019-04-26
+ * \version 1.0.002
+ * \brief This class contains the user interface communication.
+ * 
+ * This class makes the user interface communication.
+ */
 class Gui {
 
     public:
+
+        /**
+		 * The Gui object constructor.
+		 * \author Lucas Fonseca dos Santos
+		 * \date 2019-04-26
+		 * \version 1.0.002
+		 */
         Gui();
+
+        /**
+		 * This method prints a successfully message.
+		 * \author Lucas Fonseca dos Santos
+		 * \date 2019-04-26
+		 * \version 1.0.002
+		 * 
+		 * \param msg A success message.
+		 */
         static void printSuceffullyMessage(std::string msg);
+
+        /**
+		 * This method prints a error message.
+		 * \author Lucas Fonseca dos Santos
+		 * \date 2019-04-26
+		 * \version 1.0.002
+		 * 
+		 * \param msg A error message.
+		 */
         static void printErrorMessage(std::string msg);
+
+        /**
+		 * This method prints a simple log message.
+		 * \author Lucas Fonseca dos Santos
+		 * \date 2019-04-26
+		 * \version 1.0.002
+		 * 
+         * \param title The message title.
+		 * \param msg A success message.
+		 */
         static void printLogMessage(std::string title,std::string msg);
     
     private:

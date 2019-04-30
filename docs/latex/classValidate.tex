@@ -1,0 +1,119 @@
+\hypertarget{classValidate}{}\section{Validate Class Reference}
+\label{classValidate}\index{Validate@{Validate}}
+
+
+This class is responsible for validating some things.  
+
+
+
+
+{\ttfamily \#include $<$validate.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classValidate_a5fc61c0a14b82f79c5a3a9fb7c3616da}{general\+I\+P\+Validation}} (std\+::string ip\+Source)
+\item 
+bool \mbox{\hyperlink{classValidate_a6d52d9463a6d4542886c96f43db95faa}{port\+Validation}} (unsigned short port)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classValidate_a7de09d185c262d596b9879727a4f298a}{routeable\+I\+P\+Validation}} (std\+::string ip\+Source)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is responsible for validating some things. 
+
+\begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos (\href{mailto:lucas@lcfcompany.com.br}{\tt lucas@lcfcompany.\+com.\+br}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002 The validator class is responsivble for validates some informations inputed by the user, as\+:
+\begin{DoxyItemize}
+\item IP source;
+\item Port source;
+\item ... 
+\end{DoxyItemize}
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classValidate_a5fc61c0a14b82f79c5a3a9fb7c3616da}\label{classValidate_a5fc61c0a14b82f79c5a3a9fb7c3616da}} 
+\index{Validate@{Validate}!general\+I\+P\+Validation@{general\+I\+P\+Validation}}
+\index{general\+I\+P\+Validation@{general\+I\+P\+Validation}!Validate@{Validate}}
+\subsubsection{\texorpdfstring{general\+I\+P\+Validation()}{generalIPValidation()}}
+{\footnotesize\ttfamily bool Validate\+::general\+I\+P\+Validation (\begin{DoxyParamCaption}\item[{std\+::string}]{ip\+Source }\end{DoxyParamCaption})}
+
+This method valids any ip source inputed. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Source} & The IP source inputed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The validation result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classValidate_a6d52d9463a6d4542886c96f43db95faa}\label{classValidate_a6d52d9463a6d4542886c96f43db95faa}} 
+\index{Validate@{Validate}!port\+Validation@{port\+Validation}}
+\index{port\+Validation@{port\+Validation}!Validate@{Validate}}
+\subsubsection{\texorpdfstring{port\+Validation()}{portValidation()}}
+{\footnotesize\ttfamily bool Validate\+::port\+Validation (\begin{DoxyParamCaption}\item[{unsigned short}]{port }\end{DoxyParamCaption})}
+
+The port validation method is responsible for validating if a port number is in valid system port range. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em port} & A port number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The validation result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classValidate_a7de09d185c262d596b9879727a4f298a}\label{classValidate_a7de09d185c262d596b9879727a4f298a}} 
+\index{Validate@{Validate}!routeable\+I\+P\+Validation@{routeable\+I\+P\+Validation}}
+\index{routeable\+I\+P\+Validation@{routeable\+I\+P\+Validation}!Validate@{Validate}}
+\subsubsection{\texorpdfstring{routeable\+I\+P\+Validation()}{routeableIPValidation()}}
+{\footnotesize\ttfamily static bool Validate\+::routeable\+I\+P\+Validation (\begin{DoxyParamCaption}\item[{std\+::string}]{ip\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method verifys if a IP source is a routeable ip address. \begin{DoxyAuthor}{Author}
+Lucas Fiorini Braga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Source} & The target IP address. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The validation result. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/util/\mbox{\hyperlink{validate_8hpp}{validate.\+hpp}}\end{DoxyCompactItemize}

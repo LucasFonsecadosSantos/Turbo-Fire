@@ -31,12 +31,15 @@ cooming soon
 | build                      | Storages the turbo fire exec object.          |
 | src                        | Storages all source codes.                    |
 | include                    | Header files.                                 |
-| src/util                   |                                               |
+| src/util                   | Util application mechanisms.                  |
 
 #### Classes List
-|   Class Name               | Function                                      |
-|:---------------------------|:----------------------------------------------|
-|                            |                                               |
+|   Class Name               | Function                                      |   Header File                    |
+|:---------------------------|:----------------------------------------------|:---------------------------------|
+| Gui                        | Implements the user interface communication.  | view/gui.hpp                     |
+| Validate                   | Implements a validation mechanism.            | util/validate.hpp                |
+| AttackPattern              | Implements the user interface communication.  | protocol/attack_pattern.hpp      |
+| ProtocolType               | Contains a enum for attack pattern info orgn. | protocol/protocol_type.hpp       |
 
 ## Version Control Documentation
 This topic explains how the project version control in this repository 
@@ -100,10 +103,10 @@ The poject tasks that should be developed.
 Source code implementation
 **View package**
 - [x] GUI class implementation.
-- [ ] GUI class documentation.
+- [x] GUI class documentation.
 **Protocol package**
 - [ ] DDOS attack pattern implementation.
-- [ ] DDOS attack pattern documentation.
+- [x] DDOS attack pattern documentation.
 **Util package**
 - [ ] Attack factory implementation.
 - [ ] Attack factory documentation.

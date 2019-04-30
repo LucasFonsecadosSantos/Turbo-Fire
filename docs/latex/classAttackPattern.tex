@@ -1,0 +1,437 @@
+\hypertarget{classAttackPattern}{}\section{Attack\+Pattern Class Reference}
+\label{classAttackPattern}\index{Attack\+Pattern@{Attack\+Pattern}}
+
+
+\mbox{\hyperlink{classAttackPattern}{Attack\+Pattern}} is the protocol for attack order communication between master and zombies host.  
+
+
+
+
+{\ttfamily \#include $<$attack\+\_\+pattern.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAttackPattern_ac0f07567ed38ca2df936fa7959ad5d82}{Attack\+Pattern}} (Protocol\+Type\+::type protocol, std\+::string target\+I\+P\+Source, unsigned short port, unsigned short thread\+Amount, unsigned short attack\+Time\+Out, unsigned short connection\+Time\+Out, unsigned short attack\+Range, std\+::string message)
+\item 
+\mbox{\hyperlink{classAttackPattern_ab8bf3f98c9199bbdd6497161fbb75341}{$\sim$\+Attack\+Pattern}} ()
+\item 
+Protocol\+Type\+::type \mbox{\hyperlink{classAttackPattern_a3baba4f4f426fdfb59d0b1e4f930fc0f}{get\+Protocol}} ()
+\item 
+std\+::string \mbox{\hyperlink{classAttackPattern_ab693660f874bdb5951c9480ec790f1ad}{get\+IP}} ()
+\item 
+std\+::string \mbox{\hyperlink{classAttackPattern_a94060d1c3243cdf8b2db2d1bb6bec1a9}{get\+Package\+Message}} ()
+\item 
+unsigned short \mbox{\hyperlink{classAttackPattern_a3a324cc0b946c138f5459f380fcc4aeb}{get\+Port}} ()
+\item 
+unsigned short \mbox{\hyperlink{classAttackPattern_a75dac1b1ad21f85adcb22f42287eab76}{get\+Thread\+Amount}} ()
+\item 
+unsigned short \mbox{\hyperlink{classAttackPattern_a85cf1abe2ba86e11d65400d3807e7b1d}{get\+Attack\+Time\+Out}} ()
+\item 
+unsigned short \mbox{\hyperlink{classAttackPattern_a92740ff35a3b4f1edd13a41d84ea7045}{get\+Connection\+Time\+Out}} ()
+\item 
+unsigned short \mbox{\hyperlink{classAttackPattern_adcc7cb0abec4c18c22036123aba0458f}{get\+Attack\+Range}} ()
+\item 
+void \mbox{\hyperlink{classAttackPattern_a46fff75a90f6e2304ab91885bf57c1f1}{set\+IP}} (std\+::string ip\+Source)
+\item 
+void \mbox{\hyperlink{classAttackPattern_a8e774193bb78ade48cade75d2ef1e7f2}{set\+Protocol}} (Protocol\+Type\+::type protocol)
+\item 
+void \mbox{\hyperlink{classAttackPattern_a34ff445145be8ef914fa4f30025b11cb}{set\+Package\+Message}} (std\+::string message)
+\item 
+void \mbox{\hyperlink{classAttackPattern_a94b44f6b6dbc0f7af85a400dfb973509}{set\+Thread\+Amount}} (unsigned short thread\+Amount)
+\item 
+void \mbox{\hyperlink{classAttackPattern_a3d00dd5e76516f44f55ea28464eab3f8}{set\+Attack\+Time\+Out}} (unsigned short attack\+Time\+Out)
+\item 
+void \mbox{\hyperlink{classAttackPattern_ad66776126cda5c62189f576985e96542}{set\+Connection\+Time\+Out}} (unsigned short connection\+Time\+Out)
+\item 
+void \mbox{\hyperlink{classAttackPattern_aee8d40c3f0159a8be0df27b5bb2e41dc}{set\+Attack\+Range}} (unsigned short attack\+Range)
+\item 
+void \mbox{\hyperlink{classAttackPattern_a5f1164d9f79b500d03e1e5ba10d02031}{set\+Port}} (unsigned short port)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classAttackPattern}{Attack\+Pattern}} is the protocol for attack order communication between master and zombies host. 
+
+\begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos (\href{mailto:lucas@lcfcompany.com.br}{\tt lucas@lcfcompany.\+com.\+br}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002 The \mbox{\hyperlink{classAttackPattern}{Attack\+Pattern}} object is used to organizes the attack operation order communications between master and zombies host. It contains the whole attack informations as\+:
+\begin{DoxyItemize}
+\item Target host ip source;
+\item Target port;
+\item Connection time out;
+\item Attack time out;
+\item Zombie thread amount;
+\item Protocol will be used;
+\item The content of packages (message); These informations are very necessary to zombie host makes the attack to some server. 
+\end{DoxyItemize}
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAttackPattern_ac0f07567ed38ca2df936fa7959ad5d82}\label{classAttackPattern_ac0f07567ed38ca2df936fa7959ad5d82}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!Attack\+Pattern@{Attack\+Pattern}}
+\index{Attack\+Pattern@{Attack\+Pattern}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{Attack\+Pattern()}{AttackPattern()}}
+{\footnotesize\ttfamily Attack\+Pattern\+::\+Attack\+Pattern (\begin{DoxyParamCaption}\item[{Protocol\+Type\+::type}]{protocol,  }\item[{std\+::string}]{target\+I\+P\+Source,  }\item[{unsigned short}]{port,  }\item[{unsigned short}]{thread\+Amount,  }\item[{unsigned short}]{attack\+Time\+Out,  }\item[{unsigned short}]{connection\+Time\+Out,  }\item[{unsigned short}]{attack\+Range,  }\item[{std\+::string}]{message }\end{DoxyParamCaption})}
+
+The \mbox{\hyperlink{classAttackPattern}{Attack\+Pattern}} constructor. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em protocol} & The protocol type used in attack. \\
+\hline
+{\em target\+I\+P\+Source} & The attack target ip source. \\
+\hline
+{\em port} & The port that will be attacked. \\
+\hline
+{\em thread\+Amount} & The zombie thread amount used in attack. \\
+\hline
+{\em attack\+Time\+Out} & The time limit or time out of the whole attack. \\
+\hline
+{\em connection\+Time\+Out} & The time limit or connection time out. (Package per package). \\
+\hline
+{\em attack\+Range} & Attack range. \\
+\hline
+{\em message} & A text message transmited by the attack package. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAttackPattern_ab8bf3f98c9199bbdd6497161fbb75341}\label{classAttackPattern_ab8bf3f98c9199bbdd6497161fbb75341}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!````~Attack\+Pattern@{$\sim$\+Attack\+Pattern}}
+\index{````~Attack\+Pattern@{$\sim$\+Attack\+Pattern}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{$\sim$\+Attack\+Pattern()}{~AttackPattern()}}
+{\footnotesize\ttfamily Attack\+Pattern\+::$\sim$\+Attack\+Pattern (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The \mbox{\hyperlink{classAttackPattern}{Attack\+Pattern}} destructor. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAttackPattern_adcc7cb0abec4c18c22036123aba0458f}\label{classAttackPattern_adcc7cb0abec4c18c22036123aba0458f}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!get\+Attack\+Range@{get\+Attack\+Range}}
+\index{get\+Attack\+Range@{get\+Attack\+Range}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{get\+Attack\+Range()}{getAttackRange()}}
+{\footnotesize\ttfamily unsigned short Attack\+Pattern\+::get\+Attack\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The attack range attribute accessor method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+Attack range value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAttackPattern_a85cf1abe2ba86e11d65400d3807e7b1d}\label{classAttackPattern_a85cf1abe2ba86e11d65400d3807e7b1d}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!get\+Attack\+Time\+Out@{get\+Attack\+Time\+Out}}
+\index{get\+Attack\+Time\+Out@{get\+Attack\+Time\+Out}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{get\+Attack\+Time\+Out()}{getAttackTimeOut()}}
+{\footnotesize\ttfamily unsigned short Attack\+Pattern\+::get\+Attack\+Time\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Attack time out attribute accessor method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+The lime limit for attack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAttackPattern_a92740ff35a3b4f1edd13a41d84ea7045}\label{classAttackPattern_a92740ff35a3b4f1edd13a41d84ea7045}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!get\+Connection\+Time\+Out@{get\+Connection\+Time\+Out}}
+\index{get\+Connection\+Time\+Out@{get\+Connection\+Time\+Out}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{get\+Connection\+Time\+Out()}{getConnectionTimeOut()}}
+{\footnotesize\ttfamily unsigned short Attack\+Pattern\+::get\+Connection\+Time\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Connection time out attribute accessor method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+The connection time limit. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAttackPattern_ab693660f874bdb5951c9480ec790f1ad}\label{classAttackPattern_ab693660f874bdb5951c9480ec790f1ad}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!get\+IP@{get\+IP}}
+\index{get\+IP@{get\+IP}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{get\+I\+P()}{getIP()}}
+{\footnotesize\ttfamily std\+::string Attack\+Pattern\+::get\+IP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Target IP source attribute accessor method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+The target IP source string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAttackPattern_a94060d1c3243cdf8b2db2d1bb6bec1a9}\label{classAttackPattern_a94060d1c3243cdf8b2db2d1bb6bec1a9}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!get\+Package\+Message@{get\+Package\+Message}}
+\index{get\+Package\+Message@{get\+Package\+Message}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{get\+Package\+Message()}{getPackageMessage()}}
+{\footnotesize\ttfamily std\+::string Attack\+Pattern\+::get\+Package\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Message attribute accessor method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+The package message content. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAttackPattern_a3a324cc0b946c138f5459f380fcc4aeb}\label{classAttackPattern_a3a324cc0b946c138f5459f380fcc4aeb}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!get\+Port@{get\+Port}}
+\index{get\+Port@{get\+Port}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{get\+Port()}{getPort()}}
+{\footnotesize\ttfamily unsigned short Attack\+Pattern\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The port attribute accessor method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+The port target connection number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAttackPattern_a3baba4f4f426fdfb59d0b1e4f930fc0f}\label{classAttackPattern_a3baba4f4f426fdfb59d0b1e4f930fc0f}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!get\+Protocol@{get\+Protocol}}
+\index{get\+Protocol@{get\+Protocol}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{get\+Protocol()}{getProtocol()}}
+{\footnotesize\ttfamily Protocol\+Type\+::type Attack\+Pattern\+::get\+Protocol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Protocol attribute accessor method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+A protocol enum type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAttackPattern_a75dac1b1ad21f85adcb22f42287eab76}\label{classAttackPattern_a75dac1b1ad21f85adcb22f42287eab76}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!get\+Thread\+Amount@{get\+Thread\+Amount}}
+\index{get\+Thread\+Amount@{get\+Thread\+Amount}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{get\+Thread\+Amount()}{getThreadAmount()}}
+{\footnotesize\ttfamily unsigned short Attack\+Pattern\+::get\+Thread\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Thread amount attribute accessor method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+The zombie thread amount. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAttackPattern_aee8d40c3f0159a8be0df27b5bb2e41dc}\label{classAttackPattern_aee8d40c3f0159a8be0df27b5bb2e41dc}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!set\+Attack\+Range@{set\+Attack\+Range}}
+\index{set\+Attack\+Range@{set\+Attack\+Range}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{set\+Attack\+Range()}{setAttackRange()}}
+{\footnotesize\ttfamily void Attack\+Pattern\+::set\+Attack\+Range (\begin{DoxyParamCaption}\item[{unsigned short}]{attack\+Range }\end{DoxyParamCaption})}
+
+Attack range modifier method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em attack\+Range} & The attack range. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAttackPattern_a3d00dd5e76516f44f55ea28464eab3f8}\label{classAttackPattern_a3d00dd5e76516f44f55ea28464eab3f8}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!set\+Attack\+Time\+Out@{set\+Attack\+Time\+Out}}
+\index{set\+Attack\+Time\+Out@{set\+Attack\+Time\+Out}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{set\+Attack\+Time\+Out()}{setAttackTimeOut()}}
+{\footnotesize\ttfamily void Attack\+Pattern\+::set\+Attack\+Time\+Out (\begin{DoxyParamCaption}\item[{unsigned short}]{attack\+Time\+Out }\end{DoxyParamCaption})}
+
+Attack time out modifier method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em attack\+Time\+Out} & The attack time out. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAttackPattern_ad66776126cda5c62189f576985e96542}\label{classAttackPattern_ad66776126cda5c62189f576985e96542}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!set\+Connection\+Time\+Out@{set\+Connection\+Time\+Out}}
+\index{set\+Connection\+Time\+Out@{set\+Connection\+Time\+Out}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{set\+Connection\+Time\+Out()}{setConnectionTimeOut()}}
+{\footnotesize\ttfamily void Attack\+Pattern\+::set\+Connection\+Time\+Out (\begin{DoxyParamCaption}\item[{unsigned short}]{connection\+Time\+Out }\end{DoxyParamCaption})}
+
+Connection time out modifier method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Time\+Out} & The connection time out value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAttackPattern_a46fff75a90f6e2304ab91885bf57c1f1}\label{classAttackPattern_a46fff75a90f6e2304ab91885bf57c1f1}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!set\+IP@{set\+IP}}
+\index{set\+IP@{set\+IP}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{set\+I\+P()}{setIP()}}
+{\footnotesize\ttfamily void Attack\+Pattern\+::set\+IP (\begin{DoxyParamCaption}\item[{std\+::string}]{ip\+Source }\end{DoxyParamCaption})}
+
+The target IP source modifier method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Source} & The target IP address. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAttackPattern_a34ff445145be8ef914fa4f30025b11cb}\label{classAttackPattern_a34ff445145be8ef914fa4f30025b11cb}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!set\+Package\+Message@{set\+Package\+Message}}
+\index{set\+Package\+Message@{set\+Package\+Message}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{set\+Package\+Message()}{setPackageMessage()}}
+{\footnotesize\ttfamily void Attack\+Pattern\+::set\+Package\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{message }\end{DoxyParamCaption})}
+
+Message attribute modifier method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The packages text message content. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAttackPattern_a5f1164d9f79b500d03e1e5ba10d02031}\label{classAttackPattern_a5f1164d9f79b500d03e1e5ba10d02031}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!set\+Port@{set\+Port}}
+\index{set\+Port@{set\+Port}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{set\+Port()}{setPort()}}
+{\footnotesize\ttfamily void Attack\+Pattern\+::set\+Port (\begin{DoxyParamCaption}\item[{unsigned short}]{port }\end{DoxyParamCaption})}
+
+Port modifier method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/30 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The target port number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAttackPattern_a8e774193bb78ade48cade75d2ef1e7f2}\label{classAttackPattern_a8e774193bb78ade48cade75d2ef1e7f2}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!set\+Protocol@{set\+Protocol}}
+\index{set\+Protocol@{set\+Protocol}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{set\+Protocol()}{setProtocol()}}
+{\footnotesize\ttfamily void Attack\+Pattern\+::set\+Protocol (\begin{DoxyParamCaption}\item[{Protocol\+Type\+::type}]{protocol }\end{DoxyParamCaption})}
+
+Protocol attribute modifier method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em protocol} & The protocol will be used in attack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAttackPattern_a94b44f6b6dbc0f7af85a400dfb973509}\label{classAttackPattern_a94b44f6b6dbc0f7af85a400dfb973509}} 
+\index{Attack\+Pattern@{Attack\+Pattern}!set\+Thread\+Amount@{set\+Thread\+Amount}}
+\index{set\+Thread\+Amount@{set\+Thread\+Amount}!Attack\+Pattern@{Attack\+Pattern}}
+\subsubsection{\texorpdfstring{set\+Thread\+Amount()}{setThreadAmount()}}
+{\footnotesize\ttfamily void Attack\+Pattern\+::set\+Thread\+Amount (\begin{DoxyParamCaption}\item[{unsigned short}]{thread\+Amount }\end{DoxyParamCaption})}
+
+Thread Amount attribute modifier method. \begin{DoxyAuthor}{Author}
+Lucas Fonseca dos Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/04-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+002
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em thread\+Amount} & The zombie thread amount. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/protocol/\mbox{\hyperlink{attack__pattern_8hpp}{attack\+\_\+pattern.\+hpp}}\end{DoxyCompactItemize}
