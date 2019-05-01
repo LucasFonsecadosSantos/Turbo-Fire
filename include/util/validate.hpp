@@ -80,6 +80,18 @@ class Validate {
 		 * \return The validation result.
 		 */
 		inline bool generalOctetValidation(char *octet);
+		
+		/**
+		 * This method returns a pointer to a array with the first 
+		 * two octets to verify if it is routable
+		 *\author Lucas Fiorini Braga
+		 *\date 2019-04-26
+		 *\version 1.0.002
+		 *
+ 		 * \param string that represents ip
+		 * \return Array with two first octets
+		 */
+		static int* getOctet(std::string);
 
 };
 
