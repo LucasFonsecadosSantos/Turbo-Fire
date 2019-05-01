@@ -1,0 +1,26 @@
+# Enable C++ support
+language: cpp
+# Compiler selection
+compiler:
+  - g++
+  - clang
+
+os:
+    - linux
+    # - osx
+
+# Build steps
+script:
+ - ./build/main
+ #- mkdir build && cd build
+ # - cmake -Dtest=ON .. && make -j8
+ # - ./urisk_test
+  # - ./mips ../tests/programs/divide.asm
+  # - ./mips ../tests/programs/jump.asm
+  # - ./mips ../tests/programs/logica.asm
+  # - ./mips ../tests/programs/multiplica.asm
+  # - ./mips ../tests/programs/shift.asm
+  # - ./mips ../tests/programs/test.asm
+
+after_success:
+#- bash <(curl -s https://codecov.io/bash)

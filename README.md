@@ -1,5 +1,5 @@
-[![Build 
-Status](https://travis-ci.org/LucasFonsecadosSantos/FrontEnd-WebProject-Manager.svg?branch=master)](https://travis-ci.org/LucasFonsecadosSantos/FrontEnd-WebProject-Manager)
+[![Build Status](https://travis-ci.org/LucasFonsecadosSantos/Turbo-Fire.svg?branch=master)](https://travis-ci.org/LucasFonsecadosSantos/Turbo-Fire)
+
 # Turbo Fire
 ###### A distributed denial of service attack simulaton tool.
 
@@ -32,6 +32,10 @@ cooming soon
 | src                        | Storages all source codes.                    |
 | include                    | Header files.                                 |
 | src/util                   | Util application mechanisms.                  |
+| src/protocol               | Contains the classes related with protocols.  |
+| src/app                    | Contains the main.                            |
+| src/view                   | Contains the user interface.                  |
+| src/parser                 | Contains all parsers implementation.          |
 
 #### Classes List
 |   Class Name               | Function                                      |   Header File                    |
@@ -40,6 +44,7 @@ cooming soon
 | Validate                   | Implements a validation mechanism.            | util/validate.hpp                |
 | AttackPattern              | Implements the user interface communication.  | protocol/attack_pattern.hpp      |
 | ProtocolType               | Contains a enum for attack pattern info orgn. | protocol/protocol_type.hpp       |
+| Parser                     | Contains a util parser implementation.        | parser/parser.hpp                |
 
 ## Version Control Documentation
 This topic explains how the project version control in this repository 
