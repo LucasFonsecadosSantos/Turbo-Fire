@@ -41,13 +41,14 @@ class Validate {
 		 * \param ipSource The IP source inputed.
 		 * \return The validation result.
 		 */
-		bool generalIPValidation(std::string ipSource);
+		static bool generalIPValidation(std::string ipSource);
 		
 		/**
 		 * This method verifys if a IP source is a routeable
 		 * ip address.
 		 * \author Lucas Fiorini Braga
-		 * \date 2019-04-30
+		 * \update Lucas Fonseca dos Santos
+		 * \date 2019-05-01
 		 * \version 1.0.002
 		 * 
 		 * \param ipSource The target IP address.
@@ -79,19 +80,7 @@ class Validate {
 		 * \param octet A IP address octet.
 		 * \return The validation result.
 		 */
-		inline bool generalOctetValidation(char *octet);
-		
-		/**
-		 * This method returns a pointer to a array with the first 
-		 * two octets to verify if it is routable
-		 *\author Lucas Fiorini Braga
-		 *\date 2019-04-26
-		 *\version 1.0.002
-		 *
- 		 * \param string that represents ip
-		 * \return Array with two first octets
-		 */
-		static int* getOctet(std::string);
+		static bool generalOctetValidation(unsigned short octet);
 
 };
 
