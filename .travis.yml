@@ -11,6 +11,7 @@ os:
 
 # Build steps
 script:
+ - make
  - ./build/main
  #- mkdir build && cd build
  # - cmake -Dtest=ON .. && make -j8
