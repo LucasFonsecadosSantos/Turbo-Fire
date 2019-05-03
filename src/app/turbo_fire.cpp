@@ -6,12 +6,11 @@
 
 int main(int argc, char *argv[]) {
 	if (argc == 2) {
-		void *application;
-		if (argv[1] == "master")
-			application = ApplicationFactory::getInstance(ApplicationFactory::applicationEnum::_MASTER_);
-		else
-			application = ApplicationFactory::getInstance(ApplicationFactory::applicationEnum::_ZOMBIE_);
-		std::cout << application;
+		if (argv[1] == "zombie") {
+			Zombie *application = static_cast<Zombie*>(ApplicationFactory::getInstance(ApplicationFactory::applicationEnum::_ZOMBIE_));
+		} else {
+			Master *application = static_cast<Master*>(ApplicationFactory::getInstance(ApplicationFactory::applicationEnum::_MASTER_));
+		}
 	}
 	return 0;
 }

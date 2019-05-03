@@ -8,7 +8,7 @@ class Master {
     public:
         Master();
         ~Master();
-    
+        
     private:
         unsigned short getUserInput();
         void startMaster();
