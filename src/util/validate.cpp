@@ -1,7 +1,6 @@
 #include "../../include/util/validate.hpp"
 #include "../../include/parser/parser.hpp"
 
-#include <iostream>
 #include <string>
 #include <vector>
 

@@ -1,19 +1,17 @@
-#include "../../include/view/gui.hpp"
-#include "../../include/protocol/attack_pattern.hpp"
-#include "../../include/protocol/protocol_type.hpp"
-#include "../../include/util/validate.hpp"
+#include "../../include/app/zombie.hpp"
+#include "../../include/app/master.hpp"
+#include "../../include/factory/application_factory.hpp"
 
 #include <iostream>
-#include <vector>
 
-int main() {
-	unsigned short port = 23;
-	unsigned short threadAmount = 10;
-	unsigned short attackTimeOut = 15;
-	unsigned short connectionTimeOut = 15;
-	unsigned short attackRange = 15;
-
-	//AttackPattern *attack = new AttackPattern(ProtocolType::_TCP_,"192.168.0.1",port,threadAmount,attackTimeOut,connectionTimeOut,attackRange,"testel");
-	
+int main(int argc, char *argv[]) {
+	if (argc == 2) {
+		void *application;
+		if (argv[1] == "master")
+			application = ApplicationFactory::getInstance(ApplicationFactory::applicationEnum::_MASTER_);
+		else
+			application = ApplicationFactory::getInstance(ApplicationFactory::applicationEnum::_ZOMBIE_);
+		std::cout << application;
+	}
 	return 0;
 }

@@ -66,6 +66,8 @@ class Gui {
 		 * \param msg A success message.
 		 */
         static void printLogMessage(std::string title,std::string msg);
+        static void masterOptions();
+        static void zombieOptions();
     
     private:
 
