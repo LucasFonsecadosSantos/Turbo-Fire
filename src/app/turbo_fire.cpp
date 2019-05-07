@@ -1,6 +1,7 @@
 #include "../../include/app/zombie.hpp"
 #include "../../include/app/master.hpp"
 #include "../../include/factory/application_factory.hpp"
+#include "../../include/parser/parser.hpp"
 
 #include <iostream>
 

@@ -8,7 +8,7 @@
 
 Parser::Parser() {
     this->commandTokens = new std::string[18] {
-        "help","fire",
+        "help","fire","exit","status",
         "--port","-p",
         "--target","-t",
         "--thread","-th",
@@ -40,7 +40,7 @@ std::vector<std::string>** Parser::getCommandTokens(std::string command) {
     char *str = &command[0u];
     char *token = strtok(str," ");
     while (token) {
-        if (isReservedWord(token)) {
+        if (isReservedWord(token) || isNumber(token)) {
             tokens[0]->push_back(token);
         } else {
             tokens[1]->push_back(token);
@@ -53,5 +53,15 @@ std::vector<std::string>** Parser::getCommandTokens(std::string command) {
 bool Parser::isReservedWord(std::string word) {
     for (unsigned short i = 0; i < 17; ++i)
         if (word == commandTokens[i]) return true;
+    return false;
+}
+
+bool Parser::isNumber(std::string token) {
+    try {
+        unsigned value = std::stoul(token);
+        return true;
+    } catch (const std::invalid_argument& e) {
+        return false;
+    }
     return false;
 }

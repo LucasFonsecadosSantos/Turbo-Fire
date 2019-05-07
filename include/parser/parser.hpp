@@ -38,12 +38,13 @@ class Parser {
 
         std::vector<std::string>** getCommandTokens(std::string command);
 
-        
     private:
 
         std::string *commandTokens;
 
         bool isReservedWord(std::string word);
+
+        bool isNumber(std::string);
 };
 
 #endif
