@@ -36,7 +36,14 @@ class Parser {
         
         static std::vector<unsigned short>* getIPTokens(std::string ipAddress);
 
+        std::vector<std::string>** getCommandTokens(std::string command);
+
+        
     private:
+
+        std::string *commandTokens;
+
+        bool isReservedWord(std::string word);
 };
 
 #endif

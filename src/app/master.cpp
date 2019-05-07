@@ -7,7 +7,7 @@ Master::Master() {
 Master::~Master() {}
 
 unsigned short Master::getUserInput() {
-
+    return 1;
 }
 
 void Master::startMaster() {
