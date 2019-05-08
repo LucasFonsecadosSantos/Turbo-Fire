@@ -3,7 +3,9 @@
 #include "../../include/factory/application_factory.hpp"
 #include "../../include/parser/parser.hpp"
 
+#include "../../include/parser/token.hpp"
 #include <iostream>
+#include <vector>
 
 int main(int argc, char *argv[]) {
 	if (argc == 2) {

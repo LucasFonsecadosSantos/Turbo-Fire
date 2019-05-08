@@ -1,4 +1,5 @@
 #include "../../include/parser/parser.hpp"
+#include "../../include/parser/token.hpp"
 
 #include <vector>
 #include <string.h>
@@ -7,8 +8,10 @@
 #include <iostream>
 
 Parser::Parser() {
-    this->commandTokens = new std::string[18] {
-        "help","fire","exit","status",
+    this->reservedWord = new std::string[4] {
+        "help","fire","exit","status"
+    };
+    this->commandAttribute = new std::string[16] {
         "--port","-p",
         "--target","-t",
         "--thread","-th",
@@ -33,26 +36,37 @@ std::vector<unsigned short>* Parser::getIPTokens(std::string ipAddress) {
     return tokens;
 }
 
-std::vector<std::string>** Parser::getCommandTokens(std::string command) {
-    std::vector<std::string>** tokens = new std::vector<std::string>*[2]();
-    tokens[0] = new std::vector<std::string>();
-    tokens[1] = new std::vector<std::string>();
+std::vector<Token*>* Parser::getCommandTokens(std::string command) {
+    std::vector<Token*> *tokens = new std::vector<Token*>();
     char *str = &command[0u];
-    char *token = strtok(str," ");
-    while (token) {
-        if (isReservedWord(token) || isNumber(token)) {
-            tokens[0]->push_back(token);
-        } else {
-            tokens[1]->push_back(token);
+    char *word = strtok(str, " ");
+    std::string tokenClass;
+    while (word) {
+        if (isReservedWord(word)) {
+            tokens->push_back(new Token(word, ""));
+        } else if (isCommandAttribute(word)) {
+            tokenClass = word;
+            word = strtok(NULL," ");
+            if (word) {
+                tokens->push_back(new Token(tokenClass, word));
+            } else {
+                //need throw a exception (not a attribute value);
+            }
         }
-        token = strtok(NULL,".");
+        word = strtok(NULL," ");
     }
     return tokens;
 }
 
 bool Parser::isReservedWord(std::string word) {
-    for (unsigned short i = 0; i < 17; ++i)
-        if (word == commandTokens[i]) return true;
+    for (unsigned short i = 0; i < 4; ++i)
+        if (word == this->reservedWord[i]) return true;
+    return false;
+}
+
+bool Parser::isCommandAttribute(std::string word) {
+    for (unsigned short i = 0; i < 16; ++i)
+        if (word == this->commandAttribute[i]) return true;
     return false;
 }
 

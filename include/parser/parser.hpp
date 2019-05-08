@@ -13,6 +13,7 @@
 #ifndef PARSER_PARSER_H
 #define PARSER_PARSER_H 1
 
+#include "token.hpp"
 #include <string>
 #include <vector>
 
@@ -36,13 +37,18 @@ class Parser {
         
         static std::vector<unsigned short>* getIPTokens(std::string ipAddress);
 
-        std::vector<std::string>** getCommandTokens(std::string command);
+        //std::vector<std::string>** getCommandTokens(std::string command);
+        std::vector<Token*>* getCommandTokens(std::string command);
 
     private:
 
-        std::string *commandTokens;
+        std::string *reservedWord;
+
+        std::string *commandAttribute;
 
         bool isReservedWord(std::string word);
+
+        bool isCommandAttribute(std::string word);
 
         bool isNumber(std::string);
 };

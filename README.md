@@ -36,15 +36,22 @@ cooming soon
 | src/app                    | Contains the main.                            |
 | src/view                   | Contains the user interface.                  |
 | src/parser                 | Contains all parsers implementation.          |
+| src/exception              | Contains all turbo fire exceptions.           |
 
 #### Classes List
 |   Class Name               | Function                                      |   Header File                    |
 |:---------------------------|:----------------------------------------------|:---------------------------------|
+| Master                     | The master turbo fire version.                | app/master.hpp                   |
+| Zombie                     | The zombie turbo fire version.                | app/zombie.hpp                   |
 | Gui                        | Implements the user interface communication.  | view/gui.hpp                     |
 | Validate                   | Implements a validation mechanism.            | util/validate.hpp                |
 | AttackPattern              | Implements the user interface communication.  | protocol/attack_pattern.hpp      |
 | ProtocolType               | Contains a enum for attack pattern info orgn. | protocol/protocol_type.hpp       |
 | Parser                     | Contains a util parser implementation.        | parser/parser.hpp                |
+| Token                      | Contains a parser token.                      | parser/token.hpp                 |
+| NotRouteableIPException    | Not routeable IP address range.               | exception/not_routeable_ip_ex.hpp|
+| NotValidArgumentException  | Not valid command argument exception.         | exception/not_valid_argume_ex.hpp|
+| IPOutOfRangeException      | Not valid IP Address exception.               | exception/ip_out_of_range_exc.hpp|
 
 ## Version Control Documentation
 This topic explains how the project version control in this repository 
@@ -107,17 +114,37 @@ The poject tasks that should be developed.
 
 Source code implementation
 **View package**
-- [x] GUI class implementation.
-- [x] GUI class documentation.
+- [x] GUI implementation.
+- [x] GUI documentation.
 **Protocol package**
-- [ ] DDOS attack pattern implementation.
-- [x] DDOS attack pattern documentation.
-**Util package**
-- [ ] Attack factory implementation.
-- [ ] Attack factory documentation.
+- [ ] AttackPattern implementation.
+- [x] AttackPattern documentation.
+**Factory package**
+- [ ] AttackFactory implementation.
+- [ ] AttackFactory documentation.
 **DAO package**
-- [ ] File handler implementation.
-- [ ] File handler documentation.
+- [ ] FileHandler implementation.
+- [ ] FileHandler documentation.
+**Exception**
+- [ ] NotRouteableIPException implementation.
+- [ ] NotRouteableIPException documentation.
+- [ ] IPOutOfRangeException implementation.
+- [ ] IPOutOfRangeException documentation.
+- [ ] NotValidArgumentException implementation.
+- [ ] NotValidArgumentException documentation.
+**Parser**
+- [ ] Parser documentation.
+- [x] Parser implementation.
+- [ ] Token documentation.
+- [x] Token implementation.
+**Util**
+- [x] Validate implementation.
+- [x] Validate documentation.
+**App**
+- [ ] Master implementation.
+- [ ] Master documentation.
+- [ ] Zombie implementation.
+- [ ] Zombie documentation.
 
 #### How to Contribute
 -
