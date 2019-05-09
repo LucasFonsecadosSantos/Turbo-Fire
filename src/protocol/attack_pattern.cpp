@@ -28,7 +28,9 @@ AttackPattern::~AttackPattern() {
 }
 
 void AttackPattern::setIP(std::string ipSource) {
-	if (this->validator->generalIPValidation(ipSource)) {
+	if (ipSource == "") {
+		this->targetIPSource = "192.168.0.1";
+	} else if (this->validator->generalIPValidation(ipSource)) {
 		this->targetIPSource = ipSource;
 	} else {
 		//needs implement a exception
