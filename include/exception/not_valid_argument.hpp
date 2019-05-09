@@ -8,7 +8,7 @@ class NotValidArgument : public std::exception {
     public:
         const char* what() const noexcept{ return m_error; }
     private:
-        std::string m_error = "Not valid command argument to make an attack simulation.";
+        const char* m_error = "Not valid command argument to make an attack simulation.";
 
 };
 

@@ -2,6 +2,42 @@
 #include <iostream>
 #include <string>
 
+void Gui::help() {
+    clear();
+    std::cout << "+-----------------------------------------------------------+\n";
+    std::cout << "| # HELP INFORMATIONS                                       |\n";
+    std::cout << "+-----------------------------------------------------------+\n";
+    std::cout << "|                                                           |\n";
+    std::cout << "| *How can you start a simulation?                          |\n";
+    std::cout << "|                                                           |\n";
+    std::cout << "| $ fire <args>                                             |\n";
+    std::cout << "|                                                           |\n";
+    std::cout << "| *Attack Params                                            |\n";
+    std::cout << "|                                                           |\n";
+    std::cout << "|     --port,         -p  (port number. ]0;65535] )         |\n";
+    std::cout << "|     --protocol,     -pt (protocol will be used)           |\n";
+    std::cout << "|     --target,       -t  (target IP address)               |\n";
+    std::cout << "|     --thread,       -th (Slave thread amount)             |\n";
+    std::cout << "|     --timeout,      -to (Connection time out)             |\n";
+    std::cout << "|     --range,        -t  (Attack range)                    |\n";
+    std::cout << "|     --attacktimeout -ato(Attack time out)                 |\n";
+    std::cout << "|     --message       -m  (Package text message)            |\n";
+    std::cout << "|                                                           |\n";
+    std::cout << "| *Example:                                                 |\n";
+    std::cout << "|                                                           |\n";
+    std::cout << "| $ fire --target 192.168.0.1 -p 80 -protocol tcp -th 20    |\n";
+    std::cout << "|                                                           |\n";
+    std::cout << "+-----------------------------------------------------------+\n";
+    std::cout << "| # ABOUT TURBO FIRE                                        |\n";
+    std::cout << "+-----------------------------------------------------------+\n";
+    std::cout << "|                                                           |\n";
+    std::cout << "| Developed under General Public License (GPLv3).           |\n";
+    std::cout << "| Written by Lucas Fonseca dos Santos.                      |\n";
+    std::cout << "| Contribution by Lucas Fiorini Braga.                      |\n";
+    std::cout << "|                                                           |\n";
+    std::cout << "+-----------------------------------------------------------+\n";
+}
+
 std::string Gui::getUserInput() {
     std::cout << "[master@turbo-fire] $ ";
     std::string x;

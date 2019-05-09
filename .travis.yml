@@ -12,7 +12,7 @@ os:
 # Build steps
 script:
  - make
- - ./build/main
+ - ./build/main master
  #- mkdir build && cd build
  # - cmake -Dtest=ON .. && make -j8
  # - ./urisk_test

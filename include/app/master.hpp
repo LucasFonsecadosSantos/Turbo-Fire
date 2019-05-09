@@ -2,6 +2,8 @@
 #define MASTER_APP_H 1
 
 #include "../view/gui.hpp"
+#include "../parser/token.hpp"
+#include <vector>
 
 class Master {
 
@@ -11,8 +13,10 @@ class Master {
         
     private:
         void startMaster();
+        void fire(std::vector<Token*> *tokens);
         void help();
         void status();
+        void exit();
 };
 
 #endif

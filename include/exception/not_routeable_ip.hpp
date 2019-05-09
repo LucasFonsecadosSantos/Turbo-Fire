@@ -5,6 +5,11 @@
 
 class NotRouteableIP : public std::exception {
 
+    public:
+        //NotRouteableIP();
+        const char* what() const noexcept{ return m_error; }
+    private:
+        const char* m_error = "Not routeable IP address exception.";
 };
 
 #endif

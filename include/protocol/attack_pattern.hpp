@@ -240,6 +240,8 @@ class AttackPattern {
 		 * \param port The target port number.
 		 */
 		void setPort(unsigned short port);
+
+		std::string toString();
 	
 	private:
 
