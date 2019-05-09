@@ -69,6 +69,7 @@ class Gui {
         static void masterOptions();
         static void zombieOptions();
         static inline void clear();
+        static std::string getUserInput();
     
     private:
 

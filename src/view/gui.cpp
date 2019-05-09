@@ -1,5 +1,13 @@
 #include "../../include/view/gui.hpp"
 #include <iostream>
+#include <string>
+
+std::string Gui::getUserInput() {
+    std::cout << "[master@turbo-fire] $ ";
+    std::string x;
+    std::cin >> x;
+    return x;
+}
 
 inline void Gui::clear() {
     std::cout << "\x1B[2J\x1B[H";
@@ -33,10 +41,6 @@ void Gui::masterOptions() {
     std::cout << "+-----------------------------------------------------------+\n";
     std::cout << "\n\n";
     std::cout << "Welcome to Turbo-Fire v1.0.1!\n";
-    std::cout << "[master@turbo-fire] $";
-
-
-
 }
 
 void Gui::zombieOptions() {

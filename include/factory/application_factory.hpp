@@ -4,11 +4,11 @@
 class ApplicationFactory {
     
     public:
-        enum applicationEnum {
+        enum APPLICATION_ENUM {
             _MASTER_,
             _ZOMBIE_
         };
-        static void* getInstance(ApplicationFactory::applicationEnum application);
+        static void* getInstance(ApplicationFactory::APPLICATION_ENUM application);
     private:
 };
 

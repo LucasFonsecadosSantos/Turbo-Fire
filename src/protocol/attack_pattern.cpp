@@ -1,12 +1,11 @@
 #include "../../include/protocol/attack_pattern.hpp"
-#include "../../include/protocol/protocol_type.hpp"
 #include "../../include/util/validate.hpp"
 
 #include <string>
 #include <iostream>
 
 AttackPattern::AttackPattern(
-	ProtocolType::type protocol,
+	PROTOCOL_TYPE protocol,
 	std::string targetIPSource,
 	unsigned short port,
 	unsigned short threadAmount,
@@ -44,7 +43,7 @@ void AttackPattern::setPort(unsigned short port) {
 	}
 }
 
-void AttackPattern::setProtocol(ProtocolType::type protocol) {
+void AttackPattern::setProtocol(PROTOCOL_TYPE protocol) {
 	this->protocol = protocol;
 }
 
@@ -64,7 +63,7 @@ void AttackPattern::setAttackRange(unsigned short attackRange) {
 	this->attackRange = attackRange;
 }
 
-ProtocolType::type AttackPattern::getProtocol() {
+AttackPattern::PROTOCOL_TYPE AttackPattern::getProtocol() {
 	return this->protocol;
 }
 

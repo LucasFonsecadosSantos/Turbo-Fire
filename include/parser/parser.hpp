@@ -37,7 +37,6 @@ class Parser {
         
         static std::vector<unsigned short>* getIPTokens(std::string ipAddress);
 
-        //std::vector<std::string>** getCommandTokens(std::string command);
         std::vector<Token*>* getCommandTokens(std::string command);
 
     private:

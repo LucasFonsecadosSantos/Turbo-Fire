@@ -10,8 +10,9 @@ class Master {
         ~Master();
         
     private:
-        unsigned short getUserInput();
         void startMaster();
+        void help();
+        void status();
 };
 
 #endif

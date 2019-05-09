@@ -14,7 +14,6 @@
 #define ATTACK_PATTERN_H 1
 
 #include <string>
-#include "protocol_type.hpp"
 #include "../util/validate.hpp"
 
 /**
@@ -41,6 +40,13 @@ class AttackPattern {
 
 	public:
 
+		enum PROTOCOL_TYPE {
+			_UNKNOW_,
+			_TCP_,
+			_UDP_
+		};
+
+		static const unsigned short UNKNOW = 0;
 		/**
 		 * The AttackPattern constructor.
 		 * \author Lucas Fonseca dos Santos
@@ -57,14 +63,14 @@ class AttackPattern {
 		 * \param message A text message transmited by the attack package.
 		 */
 		AttackPattern(
-			ProtocolType::type protocol,
-			std::string targetIPSource,
-			unsigned short port,
-			unsigned short threadAmount,
-			unsigned short attackTimeOut,
-			unsigned short connectionTimeOut,
-			unsigned short attackRange,
-			std::string message
+			PROTOCOL_TYPE 	protocol,
+			std::string 	targetIPSource,
+			unsigned short	port,
+			unsigned short	threadAmount,
+			unsigned short	attackTimeOut,
+			unsigned short	connectionTimeOut,
+			unsigned short	attackRange,
+			std::string 	message
 		);
 
 		/**
@@ -83,7 +89,7 @@ class AttackPattern {
 		 * 
 		 * \return A protocol enum type.
 		 */
-		ProtocolType::type getProtocol();
+		PROTOCOL_TYPE getProtocol();
 
 		/**
 		 * Target IP source attribute accessor method.
@@ -173,7 +179,7 @@ class AttackPattern {
 		 * 
 		 * \param protocol The protocol will be used in attack.
 		 */
-		void setProtocol(ProtocolType::type protocol);
+		void setProtocol(PROTOCOL_TYPE protocol);
 
 		/**
 		 * Message attribute modifier method.
@@ -238,7 +244,7 @@ class AttackPattern {
 	private:
 
 		Validate *validator;
-		ProtocolType::type protocol;
+		PROTOCOL_TYPE protocol;
 		std::string targetIPSource;
 		std::string message;
 		unsigned short port;
