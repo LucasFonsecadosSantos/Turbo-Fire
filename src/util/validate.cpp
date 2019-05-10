@@ -18,9 +18,9 @@ bool Validate::routeableIPValidation(std::string ipSource) {
 	if (octets->at(0) == 10) {
 		return false;
 	} else if (octets->at(0) == 172) {
-		return (octets->at(1) > 31 || octets->at(1) < 16);
+		return (octets->at(1) <= 31 || octets->at(1) >= 16);
 	} else {
-		return (!octets->at(0) == 192 && octets->at(1) == 168);
+		return (octets->at(0) == 192 && octets->at(1) == 168);
 	}
 }
 

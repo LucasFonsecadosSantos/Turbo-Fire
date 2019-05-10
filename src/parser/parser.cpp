@@ -1,5 +1,6 @@
 #include "../../include/parser/parser.hpp"
 #include "../../include/parser/token.hpp"
+#include "../../include/exception/argument_expected.hpp"
 
 #include <vector>
 #include <string.h>
@@ -50,7 +51,7 @@ std::vector<Token*>* Parser::getCommandTokens(std::string command) {
             if (word) {
                 tokens->push_back(new Token(tokenClass, word));
             } else {
-                //need throw a exception (not a attribute value);
+                throw ArgumentExpected();
             }
         }
         word = strtok(NULL," ");

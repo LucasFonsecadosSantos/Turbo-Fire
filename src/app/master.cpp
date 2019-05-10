@@ -74,8 +74,6 @@ void Master::fire(std::vector<Token*> *tokens) {
         threadAmount,attackTimeOut,connectionTimeOut,
         attackRange,message
     );
-    
-    std::cout << attack->toString();
 }
 
 void Master::help() {

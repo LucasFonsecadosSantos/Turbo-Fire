@@ -41,7 +41,7 @@ void Gui::help() {
 std::string Gui::getUserInput() {
     std::cout << "[master@turbo-fire] $ ";
     std::string x;
-    std::cin >> x;
+    getline(std::cin, x);
     return x;
 }
 
