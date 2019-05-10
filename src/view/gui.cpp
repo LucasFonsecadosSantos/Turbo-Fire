@@ -79,6 +79,6 @@ void Gui::masterOptions() {
     std::cout << "Welcome to Turbo-Fire v1.0.1!\n";
 }
 
-void Gui::zombieOptions() {
+void Gui::slaveOptions() {
     clear();
 }

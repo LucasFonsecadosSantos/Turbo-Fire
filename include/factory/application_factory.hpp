@@ -6,7 +6,7 @@ class ApplicationFactory {
     public:
         enum APPLICATION_ENUM {
             _MASTER_,
-            _ZOMBIE_
+            _SLAVE_
         };
         static void* getInstance(ApplicationFactory::APPLICATION_ENUM application);
     private:

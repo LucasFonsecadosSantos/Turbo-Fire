@@ -67,7 +67,7 @@ class Gui {
 		 */
         static void printLogMessage(std::string title,std::string msg);
         static void masterOptions();
-        static void zombieOptions();
+        static void slaveOptions();
         static inline void clear();
         static std::string getUserInput();
         static void help();
