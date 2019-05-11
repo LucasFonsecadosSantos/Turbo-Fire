@@ -3,6 +3,7 @@
 
 #include "../view/gui.hpp"
 #include "../parser/token.hpp"
+#include "../protocol/attack_pattern.hpp"
 #include <vector>
 
 class Master {
@@ -17,6 +18,7 @@ class Master {
         void help();
         void status();
         void exit();
+        void startAttack(AttackPattern *attack);
 };
 
 #endif

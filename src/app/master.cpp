@@ -3,6 +3,7 @@
 #include "../../include/parser/parser.hpp"
 #include "../../include/parser/token.hpp"
 #include "../../include/protocol/attack_pattern.hpp"
+#include "../../include/util/thread_runner.hpp"
 
 #include <cstddef>
 #include <iostream> //to delete
@@ -74,10 +75,19 @@ void Master::fire(std::vector<Token*> *tokens) {
         threadAmount,attackTimeOut,connectionTimeOut,
         attackRange,message
     );
+
+    startAttack(attack);
 }
 
 void Master::help() {
     Gui::help();
 }
 void Master::status() {}
-void Master::exit() {}
+
+void Master::exit() {
+    //exit(1);
+}
+
+void Master::startAttack(AttackPattern *attack) {
+    
+}
