@@ -1,10 +1,10 @@
-#include "../../include/app/master.hpp"
-#include "../../include/view/gui.hpp"
-#include "../../include/parser/parser.hpp"
-#include "../../include/parser/token.hpp"
-#include "../../include/protocol/attack_pattern.hpp"
-#include "../../include/util/thread_runner.hpp"
+#include "../../include/turbofire/app/master.hpp"
+#include "../../include/turbofire/view/gui.hpp"
+#include "../../include/turbofire/parser/parser.hpp"
+#include "../../include/turbofire/parser/token.hpp"
+#include "../../include/turbofire/protocol/attack_pattern.hpp"
 
+#include <pthread.h>
 #include <cstddef>
 #include <iostream> //to delete
 

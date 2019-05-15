@@ -1,4 +1,4 @@
-#include "../../include/app/slave.hpp"
+#include "../../include/turbofire/app/slave.hpp"
 
 Slave::Slave() {}
 Slave::~Slave() {}

@@ -1,6 +1,6 @@
-#include "../../include/parser/parser.hpp"
-#include "../../include/parser/token.hpp"
-#include "../../include/exception/argument_expected.hpp"
+#include "../../include/turbofire/parser/parser.hpp"
+#include "../../include/turbofire/parser/token.hpp"
+#include "../../include/turbofire/exception/argument_expected.hpp"
 
 #include <vector>
 #include <string.h>

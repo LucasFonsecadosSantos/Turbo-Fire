@@ -1,6 +1,6 @@
-#include "../../include/app/slave.hpp"
-#include "../../include/app/master.hpp"
-#include "../../include/factory/application_factory.hpp"
+#include "../../include/turbofire/app/slave.hpp"
+#include "../../include/turbofire/app/master.hpp"
+#include "../../include/turbofire/factory/application_factory.hpp"
 
 int main(int argc, char *argv[]) {
 	if (argc == 2) {
