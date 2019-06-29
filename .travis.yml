@@ -23,5 +23,4 @@ script:
   # - ./mips ../tests/programs/shift.asm
   # - ./mips ../tests/programs/test.asm
 
-after_success:
 #- bash <(curl -s https://codecov.io/bash)

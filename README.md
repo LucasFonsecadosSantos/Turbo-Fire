@@ -1,4 +1,9 @@
 [![Build Status](https://travis-ci.org/LucasFonsecadosSantos/Turbo-Fire.svg?branch=master)](https://travis-ci.org/LucasFonsecadosSantos/Turbo-Fire)
+[![star this repo](http://githubbadges.com/star.svg?user=LucasFonsecaDosSantos&repo=Turbo-Fire&style=flat)](https://github.com/LucasFonsceaDosSantos/Turbo-Fire)
+[![fork this repo](http://githubbadges.com/fork.svg?user=LucasFonsecaDosSantos&repo=Turbo-Fire&style=flat)](https://github.com/LucasFonsecaDosSantos/Turbo-Fire/fork)
+[![GitHub version](https://badge.fury.io/gh/LucasFonsecaDosSantos%2FTurbo-Fire.svg)](https://badge.fury.io/gh/LucasFonsecaDosSantos%2FTurbo-Fire)
+[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102)](https://github.com/LucasFonsecaDosSantos/Turbo-Fire/)
+[![Open Source Love](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102)](https://github.com/LucasFonsecaDosSantos/Turbo-Fire/)
 
 # Turbo Fire
 ###### A distributed denial of service attack simulaton tool.
