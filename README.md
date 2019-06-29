@@ -1,9 +1,14 @@
-[![Build Status](https://travis-ci.org/LucasFonsecadosSantos/Turbo-Fire.svg?branch=master)](https://travis-ci.org/LucasFonsecadosSantos/Turbo-Fire)
-[![star this repo](http://githubbadges.com/star.svg?user=LucasFonsecaDosSantos&repo=Turbo-Fire&style=flat)](https://github.com/LucasFonsceaDosSantos/Turbo-Fire)
-[![fork this repo](http://githubbadges.com/fork.svg?user=LucasFonsecaDosSantos&repo=Turbo-Fire&style=flat)](https://github.com/LucasFonsecaDosSantos/Turbo-Fire/fork)
-[![GitHub version](https://badge.fury.io/gh/LucasFonsecaDosSantos%2FTurbo-Fire.svg)](https://badge.fury.io/gh/LucasFonsecaDosSantos%2FTurbo-Fire)
-[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102)](https://github.com/LucasFonsecaDosSantos/Turbo-Fire/)
-[![Open Source Love](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102)](https://github.com/LucasFonsecaDosSantos/Turbo-Fire/)
+[![Build Status](https://travis-ci.org/LucasFonsecadosSantos/Turbo-Fire.svg?branch=master&style=popout-square)](https://travis-ci.org/LucasFonsecadosSantos/Turbo-Fire)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/51d413ae34354b39b33c2182821ecc77)](https://www.codacy.com/app/LucasFonsecadosSantos/Turbo-Fire?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LucasFonsecadosSantos/Turbo-Fire&amp;utm_campaign=Badge_Grade)
+[![star this repo](http://githubbadges.com/star.svg?user=LucasFonsecaDosSantos&repo=Turbo-Fire&style=popout-square)](https://github.com/LucasFonsceaDosSantos/Turbo-Fire)
+[![fork this repo](http://githubbadges.com/fork.svg?user=LucasFonsecaDosSantos&repo=Turbo-Fire&style=popout-square)](https://github.com/LucasFonsecaDosSantos/Turbo-Fire/fork)
+![GitHub last commit](https://img.shields.io/github/last-commit/LucasFonsecaDosSantos/Turbo-Fire.svg?style=popout-square)
+![GitHub contributors](https://img.shields.io/github/contributors/LucasFonsecaDosSantos/Turbo-Fire.svg?style=popout-square)
+![GitHub file size in bytes](https://img.shields.io/github/size/LucasFonsecaDosSantos/Turbo-Fire.svg?style=popout-square)
+[![GitHub version](https://badge.fury.io/gh/LucasFonsecaDosSantos%2FTurbo-Fire.svg?style=popout-square)](https://badge.fury.io/gh/LucasFonsecaDosSantos%2FTurbo-Fire)
+[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102&style=popout-square)](https://github.com/LucasFonsecaDosSantos/Turbo-Fire/)
+[![Open Source Love](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102&style=popout-square)](https://github.com/LucasFonsecaDosSantos/Turbo-Fire/)
+
 
 # Turbo Fire
 ###### A distributed denial of service attack simulaton tool.
