@@ -5,51 +5,43 @@
  * + ------------------------------------------------+
  * +---------------------------------F1R3S3C T34M----+
  * 
- * \file parser.hpp
- * \brief This file has a parser description.
+ * \file command_parser.hpp
+ * \brief This file has a command parser description.
  * \copyright COPYLEFT :)
  * This project is under GPLv3 (General Public License) version 3.
  */
-#ifndef PARSER_PARSER_H
-#define PARSER_PARSER_H 1
+#ifndef COMMAND_PARSER_PARSER_H
+#define COMMAND_PARSER_PARSER_H 1
 
-#include "token.hpp"
+#include "token_list.hpp"
+#include "parser.hpp"
 #include <string>
 #include <vector>
 
 /**
- * \class Parser
+ * \class CommandParser
  * \author Lucas Fonseca dos Santos (lucas@lcfcompany.com.br)
  * \date 2019-05-01
  * \version 1.0.002
- * \brief This class implements a parser to use in application.
+ * \brief This class implements a command parser to use in application.
  * 
  * The parser implemented here can make parsing of IP address, data input
  * and other things.
  */
-class Parser {
+class CommandParser: public Parser {
 
     public:
 
-        Parser();
+        CommandParser();
 
-        ~Parser();
+        ~CommandParser();
         
         //static std::vector<unsigned short>* getIPTokens(std::string ipAddress);
 
-        virtual TokenList* parse(std::string command);
-
     private:
 
-        std::string *reservedWord;
+        bool isCommandAttribute(std::string word);
 
-        //std::string *commandAttribute;
-
-        bool isReservedWord(std::string word);
-
-        //bool isCommandAttribute(std::string word);
-
-        bool isNumber(std::string);
 };
 
 #endif
