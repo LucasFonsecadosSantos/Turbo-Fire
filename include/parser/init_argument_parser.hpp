@@ -10,10 +10,9 @@
  * \copyright COPYLEFT :)
  * This project is under GPLv3 (General Public License) version 3.
  */
-#ifndef COMMAND_PARSER_PARSER_H
-#define COMMAND_PARSER_PARSER_H 1
+#ifndef INIT_ARGUMENT_PARSER_H
+#define INIT_ARGUMENT_PARSER_H 1
 
-#include "token_list.hpp"
 #include "base_parser.hpp"
 #include <string>
 #include <vector>
@@ -28,13 +27,13 @@
  * The parser implemented here can make parsing of IP address, data input
  * and other things.
  */
-class CommandParser: virtual public BaseParser {
+class InitArgumentParser: virtual public BaseParser {
 
     public:
 
-        CommandParser();
+        InitArgumentParser();
 
-        ~CommandParser();
+        ~InitArgumentParser();
         
         virtual TokenList* parse(std::string corpus) override;
 
@@ -48,7 +47,7 @@ class CommandParser: virtual public BaseParser {
 
         char* getWord(std::string word);
 
-        void setReservedWords() override;
+        virtual void setReservedWords();
 
 };
 

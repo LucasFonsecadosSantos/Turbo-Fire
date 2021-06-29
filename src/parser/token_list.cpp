@@ -22,9 +22,8 @@ Token* TokenList::getToken(unsigned short index) {
 }
 
 std::string TokenList::toString() {
-/
-    std::string str;
 
+    std::string str;
     return str;
 
 }

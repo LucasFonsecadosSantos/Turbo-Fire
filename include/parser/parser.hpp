@@ -13,7 +13,9 @@
 #ifndef PARSER_PARSER_H
 #define PARSER_PARSER_H 1
 
+#include "base_parser.hpp"
 #include "token.hpp"
+#include "token_list.hpp"
 #include <string>
 #include <vector>
 
@@ -34,22 +36,28 @@ class Parser {
         Parser();
 
         ~Parser();
-        
-        //static std::vector<unsigned short>* getIPTokens(std::string ipAddress);
 
-        virtual TokenList* parse(std::string command);
+        TokenList* parsingOf(std::string command);
+
+        void setCorpus(std::string corpus);
+
+        void setStrategy(BaseParser *strategy);
+
+        BaseParser* getInstance();
+
+        std::string getCorpus();
+
+        static std::string convertCharArrayToString(int argc, char *argv[]);
+
+
+    protected:
+
+        BaseParser *parser;
+
+        
 
     private:
 
-        std::string *reservedWord;
-
-        //std::string *commandAttribute;
-
-        bool isReservedWord(std::string word);
-
-        //bool isCommandAttribute(std::string word);
-
-        bool isNumber(std::string);
 };
 
 #endif
